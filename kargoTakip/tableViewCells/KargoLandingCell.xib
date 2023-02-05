@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KargoLandingCell" id="gTV-IL-0wX" customClass="KargoLandingCell" customModule="kargoTakip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="126"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y03-uw-94i">
+                        <rect key="frame" x="20" y="0.0" width="132" height="126"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XYZ Kargo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5at-Jl-iu4">
+                                <rect key="frame" x="8" y="10" width="114" height="18.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazirlaniyor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXb-Q2-SOo">
+                                <rect key="frame" x="8" y="38.5" width="114" height="15"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03.11.2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeH-3A-frz">
+                                <rect key="frame" x="8" y="105.5" width="114" height="12.5"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LXb-Q2-SOo" secondAttribute="trailing" constant="10" id="2Ct-4Y-ZLL"/>
+                            <constraint firstAttribute="trailing" secondItem="5at-Jl-iu4" secondAttribute="trailing" constant="10" id="GTB-RY-QJM"/>
+                            <constraint firstItem="5at-Jl-iu4" firstAttribute="top" secondItem="y03-uw-94i" secondAttribute="top" constant="10" id="Gnc-ss-VMp"/>
+                            <constraint firstItem="5at-Jl-iu4" firstAttribute="leading" secondItem="y03-uw-94i" secondAttribute="leading" constant="8" id="HpX-ej-fZ6"/>
+                            <constraint firstItem="LXb-Q2-SOo" firstAttribute="leading" secondItem="y03-uw-94i" secondAttribute="leading" constant="8" id="IXu-Hw-1Xc"/>
+                            <constraint firstAttribute="trailing" secondItem="GeH-3A-frz" secondAttribute="trailing" constant="10" id="Sl0-Ua-7Pn"/>
+                            <constraint firstAttribute="bottom" secondItem="GeH-3A-frz" secondAttribute="bottom" constant="8" id="dSS-4J-jMe"/>
+                            <constraint firstItem="LXb-Q2-SOo" firstAttribute="top" secondItem="5at-Jl-iu4" secondAttribute="bottom" constant="10" id="phP-5s-mgg"/>
+                            <constraint firstItem="GeH-3A-frz" firstAttribute="leading" secondItem="y03-uw-94i" secondAttribute="leading" constant="8" id="xlC-Mq-gkC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="y03-uw-94i" secondAttribute="bottom" id="0AT-Ef-za4"/>
+                <constraint firstItem="y03-uw-94i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CV0-77-sRu"/>
+                <constraint firstAttribute="trailing" secondItem="y03-uw-94i" secondAttribute="trailing" id="Usv-vb-14N"/>
+                <constraint firstItem="y03-uw-94i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="pDY-1L-1hX"/>
+            </constraints>
+            <connections>
+                <outlet property="backView" destination="y03-uw-94i" id="fRc-ry-aHq"/>
+                <outlet property="kargoDate" destination="GeH-3A-frz" id="6OO-GD-HKc"/>
+                <outlet property="labelStatus" destination="LXb-Q2-SOo" id="oD6-0T-PqQ"/>
+                <outlet property="labelTitle" destination="5at-Jl-iu4" id="7hF-eC-67Y"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
